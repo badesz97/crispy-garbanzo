@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiBase</name>
+    </assembly>
+    <members>
+        <member name="M:ApiBase.Controllers.AdminController.GetUsers">
+            <summary>
+            visszaadja az összes usert (username, id, email és roleok stringként)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AdminController.GetUser(System.String)">
+            <summary>
+            visszaadja a konkrét usert (username, id, email és roleok stringként)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AdminController.UserToRole(ApiBase.ViewModels.UserRoleViewModel)">
+            <summary>
+            egy adott id-jű usert (id), adott nevű role-ba (role) helyezi
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AdminController.UserFromRole(ApiBase.ViewModels.UserRoleViewModel)">
+            <summary>
+            egy adott id-jű usert (id), adott nevű role-ból (role) kiszed
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AdminController.RoleList">
+            <summary>
+            Milyen roleok vannak a rendszerben?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AdminController.CreateRole(ApiBase.ViewModels.RoleViewModel)">
+            <summary>
+            role létrehozása
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AuthController.InsertUser(ApiBase.ViewModels.RegisterViewModel)">
+            <summary>
+            Felhasználó regisztrálása a rendszerbe
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.AuthController.Login(ApiBase.ViewModels.LoginViewModel)">
+            <summary>
+            Felhasználó bejelentkeztetése a rendszerbe
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.GetMyTodos">
+            <summary>
+            visszaadja az adott user összes todo-ját
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.GetMyTodo(System.String)">
+            <summary>
+            visszaadja az adott user adott id-jű todoját
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.GetAllTodo">
+            <summary>
+            visszaadja minden user összes todo-ját (csak adminoknak!)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.GetTodoFromUser(System.String)">
+            <summary>
+            visszaadja valamely user konkrét todo-ját (csak adminoknak!)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.CreateTodo(ApiBase.Models.Todo)">
+            <summary>
+            Todo létrehozása (kell: title stringként, hours intként)
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.RemoveTodo(System.String)">
+            <summary>
+            todo törlése id alapján, ha a miénk vagy adminok vagyunk
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.TodoController.UpdateTodo(ApiBase.Models.Todo)">
+            <summary>
+            Todo módosítása, kell neki a teljes új todo object a régi id-jával
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.GetMyTs">
+            <summary>
+            visszaadja az adott user összes T-jét
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.GetMyT(System.String)">
+            <summary>
+            visszaadja az adott user adott id-jű T-jét
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.GetAllT">
+            <summary>
+            visszaadja minden user összes T-ját
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.GetTFromUser(System.String)">
+            <summary>
+            visszaadja valamely user konkrét T-ját
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.CreateT(`0)">
+            <summary>
+            T létrehozása
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.RemoveT(System.String)">
+            <summary>
+            T törlése id alapján, ha a miénk vagy adminok vagyunk
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiBase.Controllers.GenericController`1.UpdateTodo(`0)">
+            <summary>
+            T módosítása, kell neki a teljes új T object a régi id-jával
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
